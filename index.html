@@ -455,17 +455,24 @@
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Description of the item </p>
 
-                                    <div class="modal_button"> <button type="button" class="btn btn-white" data-toggle="modal" data-target=".bd-example-modal-lg">Details</button> </div>
-                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
+
+                                    <div class=modal_button> <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#myModal">Details</button> </div>
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+
+
                                             <div class="modal-content">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br> 
-
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br> 
-
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br> 
-
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modal Header</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Some text in the modal.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -733,7 +740,7 @@
                 <div class="card" id="footer">
                     <div>
                         <p> Copyright&copy;2018 by Md. Hasanuzzaman  </p>
-                        
+
                         <p> 28/8, Block-A, Mirpur-12, Pallabi, Dhaka-1216, hasan.eee_diu@yahoo.com, +880 1927783898 </p>                                          
                         <div>
                             <div class="text-center center-block">
@@ -758,7 +765,7 @@
                                     content.style.display = "block";
                                 }});
                         }
-                        
+
                         function move() {
                             var elem = document.getElementById("myBar"); 
                             var width = 1;
