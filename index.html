@@ -191,6 +191,102 @@
                 text-align: left;
                 font-size: 14px; 
             }
+            
+            
+            
+            
+            #myImg {
+                
+                cursor: pointer;
+                transition: 0.3s;
+                width: 100%; 
+            }
+
+            #myImg:hover {opacity: 0.7;}
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+
+            /* Add Animation */
+            .modal-content, #caption {  
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+            }
+
+            @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+
+            /* The Close Button */
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                    width: 100%;
+                }
+            }
+            
+            
+            
+            
+            
+            
 
         </style>
     </head>
@@ -666,10 +762,23 @@
 
                 <div class="card_container">
                     <div class="card-deck">
+                        
+                        
+                        
                         <div class="card">
-                            <img class="card-img-top" src="me&zi.jpg" alt="Card image cap">
+                            
+                            
+                            <img id="myImg" src="me&zi.jpg" alt="Snow" style="width:100%">
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            
                             <div >
-                                <h5 class="card-title"> I am with professor Muhammed Zafar Iqbal, PhD  </h5>
+                                <p class="card-title"> <b> I am with professor Muhammed Zafar Iqbal, PhD </b> </p>
                                 <p class="card-text">In the national conference of Bangladesh Physical Society, 2014</p>
                             </div>
 
@@ -678,7 +787,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&mlr.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Rickshaw riding with Professor Lutfar Rahman, PhD </h5>
+                                <p class="card-title"> <b> Rickshaw riding with professor Lutfar Rahman, PhD </b> </p>
                                 <p class="card-text">In that time I was the Special Research Associate of Professor Lutfar Rahman at Daffodil International University, 2015. </p>
                             </div>
 
@@ -692,7 +801,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&kykobad.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">I am with professor Mohammad Kaykobad, PhD</h5>
+                                <p class="card-title"> <b>I am with professor Mohammad Kaykobad, PhD </b></h5>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -701,7 +810,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&ceo.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title</b> </p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -714,7 +823,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&unesco.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -723,7 +832,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&yang.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -736,7 +845,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&akmfh.jpg" alt="Card image cap">
                             <div>
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -745,7 +854,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&ah.jpg" alt="Card image cap">
                             <div>
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -758,7 +867,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&emyl.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -767,7 +876,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&mlr_family.jpg" alt="Card image cap">
                             <div>
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -780,7 +889,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&mymom.jpg" alt="Card image cap">
                             <div>
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -789,7 +898,7 @@
                         <div class="card">
                             <img class="card-img-top" src="me&mlr3.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -802,7 +911,7 @@
                         <div class="card">
                             <img class="card-img-top" src="diucolegue.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -811,7 +920,7 @@
                         <div class="card">
                             <img class="card-img-top" src="mujibnagar.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -833,7 +942,7 @@
                         <div class="card">
                             <img class="card-img-top" src="bikeatchuadanga.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -846,7 +955,7 @@
                         <div class="card">
                             <img class="card-img-top" src="3idiots.jpg" alt="Card image cap">
                             <div>
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -855,7 +964,7 @@
                         <div class="card">
                             <img class="card-img-top" src="bullfight.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -868,7 +977,7 @@
                         <div class="card">
                             <img class="card-img-top" src="childpark.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -877,7 +986,7 @@
                         <div class="card">
                             <img class="card-img-top" src="junglehunting.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -890,7 +999,7 @@
                         <div class="card">
                             <img class="card-img-top" src="kushtiamunicipal.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -899,7 +1008,7 @@
                         <div class="card">
                             <img class="card-img-top" src="portfolio_image.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -912,7 +1021,7 @@
                         <div class="card">
                             <img class="card-img-top" src="portfolio_image.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -921,7 +1030,7 @@
                         <div class="card">
                             <img class="card-img-top" src="portfolio_image.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -934,7 +1043,7 @@
                         <div class="card">
                             <img class="card-img-top" src="portfolio_image.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item </p>
                             </div>
 
@@ -943,7 +1052,7 @@
                         <div class="card">
                             <img class="card-img-top" src="portfolio_image.jpg" alt="Card image cap">
                             <div >
-                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title"> <b> Card title </b></p>
                                 <p class="card-text">Description of the item</p>
                             </div>
                         </div>
@@ -967,6 +1076,8 @@
                         </div>
                     </div>
                 </div>
+                
+                
                 <script>
                     var coll = document.getElementsByClassName("collapsible");
                     var i;
@@ -1004,6 +1115,29 @@
                     }
                     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
                     $('.panel-group').on('shown.bs.collapse', toggleIcon);
+                    
+                    
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById('myImg');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }
+                    
 
 
 
