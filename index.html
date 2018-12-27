@@ -194,9 +194,6 @@
                 font-size: 14px; 
             }
 
-
-
-
             #myImg {
 
                 cursor: pointer;
@@ -285,11 +282,6 @@
             }
 
 
-
-
-
-
-
         </style>
 
     </head>
@@ -297,7 +289,7 @@
     <body>
 
         <div class="fb-customerchat"
-             page_id="<327561624502827>">
+             page_id="327561624502827">
         </div>
 
         <div class="container">                    
@@ -772,7 +764,6 @@
 
                 </div>
 
-
                 <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -1062,6 +1053,7 @@
 
             </div>
             <hr>
+            
             <div class="card" id="footer">
                 <div>
                     <p> Copyright&copy;2018 by Md. Hasanuzzaman  </p>
@@ -1076,100 +1068,98 @@
                         </div>
                     </div>
                 </div>
+            </div> 
 
 
-                <script>
-                    var coll = document.getElementsByClassName("collapsible");
-                    var i;
-                    for (i = 0; i < coll.length; i++) {
-                        coll[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var content = this.nextElementSibling;
-                            if (content.style.display === "block") {
-                                content.style.display = "none";
-                            } 
-                            else {
-                                content.style.display = "block";
-                            }});
-                    }
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } 
+                        else {
+                            content.style.display = "block";
+                        }});
+                }
 
-                    function move() {
-                        var elem = document.getElementById("myBar"); 
-                        var width = 1;
-                        var id = setInterval(frame, 10);
-                        function frame() {
-                            if (width >= 100) {
-                                clearInterval(id);
-                            } else {
-                                width++; 
-                                elem.style.width = width + '%'; 
-                            }
+                function move() {
+                    var elem = document.getElementById("myBar"); 
+                    var width = 1;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                        } else {
+                            width++; 
+                            elem.style.width = width + '%'; 
                         }
                     }
+                }
 
-                    function toggleIcon(e) {
-                        $(e.target)
-                            .prev('.panel-heading')
-                            .find(".more-less")
-                            .toggleClass('fa-plus fa-minus');
-                    }
-                    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-                    $('.panel-group').on('shown.bs.collapse', toggleIcon);
-
-
-                    // Get the modal
-                    var modal = document.getElementById('myModal');
-
-                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-
-                    var img = document.getElementById('myImg');
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                    }
-
-                    // Get the <span> element that closes the modal
-
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() { 
-                        modal.style.display = "none";
-                    }
+                function toggleIcon(e) {
+                    $(e.target)
+                        .prev('.panel-heading')
+                        .find(".more-less")
+                        .toggleClass('fa-plus fa-minus');
+                }
+                $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+                $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
 
-                    function onClick(element) {
-                        document.getElementById("img01").src = element.src;
-                        document.getElementById("modal01").style.display = "block";
-                    }
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                }
 
 
-                    // Get the facebook chatbot SDK
+                // Get the facebook chatbot SDK
 
-                    window.fbAsyncInit = function() {
-                        FB.init({
-                            appId            : 'your-app-id',
-                            autoLogAppEvents : true,
-                            xfbml            : true,
-                            version          : 'v3.2'
-                        });
-                    };
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        appId            : 'your-app-id',
+                        autoLogAppEvents : true,
+                        xfbml            : true,
+                        version          : 'v3.2'
+                    });
+                };
 
-                    (function(d, s, id){
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) {return;}
-                        js = d.createElement(s); js.id = id;
-                        js.src = "https://connect.facebook.net/en_US/sdk.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
+                (function(d, s, id){
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            
+            </script>
 
-
-
-                </script>
-            </div>
         </div>
     </body>
 </html>
