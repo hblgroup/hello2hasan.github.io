@@ -296,6 +296,10 @@
 
     <body>
 
+        <div class="fb-customerchat"
+             page_id="<327561624502827>">
+        </div>
+
         <div class="container">                    
             <div class="card" id="header">
                 <div class="row">
@@ -1128,7 +1132,7 @@
                     }
 
                     // Get the <span> element that closes the modal
-                    
+
                     var span = document.getElementsByClassName("close")[0];
 
                     // When the user clicks on <span> (x), close the modal
@@ -1142,15 +1146,30 @@
                         document.getElementById("modal01").style.display = "block";
                     }
 
-                    
+
                     // Get the facebook chatbot SDK
-                    
-                   
-                
+
+                    window.fbAsyncInit = function() {
+                        FB.init({
+                            appId            : 'your-app-id',
+                            autoLogAppEvents : true,
+                            xfbml            : true,
+                            version          : 'v3.2'
+                        });
+                    };
+
+                    (function(d, s, id){
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) {return;}
+                        js = d.createElement(s); js.id = id;
+                        js.src = "https://connect.facebook.net/en_US/sdk.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+
 
 
                 </script>
-        </div>
+            </div>
         </div>
     </body>
 </html>
