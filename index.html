@@ -16,6 +16,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
 
 		<style>
 			.container{
@@ -288,6 +294,10 @@
 			}
 
 
+
+
+
+
 		</style>
 
 	</head>
@@ -295,7 +305,12 @@
 	<body>
 
 
-		<div class="container">    
+		<div class="container">
+			
+			<div data-aos="fade-right"
+				 data-aos-offset="300"
+				 data-aos-easing="ease-in-sine">
+			</div>
 
 			<div class="fb-customerchat"
 				 page_id="327561624502827">
@@ -305,9 +320,9 @@
 			<div class="card" id="header">
 				<div class="row">
 					<div class="col-sm-10"> 
-						<h1> I am Hasan </h1> Chief Technology Evangelist at CodeMarshal
+						<h1 > I am Hasan </h1> Chief Technology Evangelist at CodeMarshal
 					</div>
-					<div class="col-sm-1"> 
+					<div class="col-sm-1">
 						<img src="me2.jpg">
 					</div>
 				</div>
@@ -734,16 +749,16 @@
 											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 										</ol>
-										
+
 										<div class="carousel-inner">
 											<div class="carousel-item active">
 												<img class="d-block w-100" src="Ronangon_1.jpg" alt="First slide">
 												<div class="carousel-caption d-none d-md-block">
-													
+
 												</div>
 											</div>
 										</div>
-										
+
 										<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
@@ -754,7 +769,7 @@
 										</a>
 									</div>
 								</div>
-								
+
 								<div>
 									<h5 class="card-title">Project: Ronangon (ongoing) </h5>
 									<div class="card-text">
@@ -788,7 +803,7 @@
 											<div class="carousel-item active">
 												<img class="d-block w-100" src="Shekho_1.JPG" alt="First slide">
 												<div class="carousel-caption d-none d-md-block">
-													
+
 												</div>
 											</div>
 										</div>
@@ -843,7 +858,7 @@
 											<div class="carousel-item active">
 												<img class="d-block w-100" src="NoboPay1.png" alt="First slide">
 												<div class="carousel-caption d-none d-md-block">
-													
+
 												</div>
 											</div>
 										</div>
@@ -891,7 +906,7 @@
 											<div class="carousel-item active">
 												<img class="d-block w-100" src="eshikkha_2.jpg" alt="First slide">
 												<div class="carousel-caption d-none d-md-block">
-													
+
 												</div>
 											</div>
 										</div>
@@ -943,7 +958,7 @@
 							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item active">
+							<div class="carousel-item active" id="fill">
 								<img class="d-block w-100" src="sonargoan_1.jpg" alt="First slide">
 								<div class="carousel-caption d-none d-md-block">
 									<h5>Sonargoan Tour with CodeMarshal Team </h5>
@@ -1335,6 +1350,10 @@
 						js.src = "https://connect.facebook.net/en_US/sdk.js";
 						fjs.parentNode.insertBefore(js, fjs);
 					}(document, 'script', 'facebook-jssdk'));
+
+
+					AOS.init();
+
 
 				</script>
 
