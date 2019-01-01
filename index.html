@@ -1,1353 +1,1418 @@
 <!DOCTYPE html>
 <html>
-	<head>
-
-		<meta name="viewport" content="width=device-width, initial-scle=1">
-		<meta name="description" content=" This is a personal website of Md. Hasanuzzzaman" />
-		<meta name="keywords" content="Hasan" />
-		<meta name="author" content="Md. Hasanuzzaman"/>
-
-		<title>Md. Hasanuzzaman</title>
-
-		<link rel="icon" href="me2.jpg" type="image/gif" sizes="16x16">	
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-		<style>
-			
-			.background{
-				max-height: 100%;
-				max-width: 100%; 
-				background-color: darkgray; 
-				
-			}
-			.container{
-				-webkit-box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
-				-moz-box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
-				box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
-				max-width: 850px;
-				margin-left: auto;
-				margin-right: auto;
-				padding: 20px;
-				background-color: white;
-
-			}
-			/* @media only screen and (max-width: 300px) {
-			.main{
-			-webkit-box-shadow: none;
-			-moz-box-shadow: none;
-			box-shadow: none;
-			max-width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 10px;       
-
-			}
-
-			} */
-
-			.collapsible {
-				margin-top: 20px;
-				background-color:dimgray;
-				color: white;
-				cursor: pointer;
-				padding: 18px;
-				width: 100%;
-				text-align: left;
-				outline: none;
-				font-size: 15px;
-				font-family: raleway;
-
-			}
-			.active, .collapsible:hover {
-				background-color: dodgerblue;
-			}
-			.content {
-				padding: 0 18px;
-				display: none;
-				overflow: hidden;
-				background-color: #f1f1f1;
-			}
-			.tab-pane{
-				background-color: white;
-			}
-			.progress{
-				margin-top: 5px;
-
-			}
-			.card_container{
-				margin-top: 20px;
-			}
-
-			.card{
-				padding: 15px;
-			}
-			}
-			#nav-gallery{
-				margin-top: 20px;
-			}
-			#footer{
-				margin-top: 20px;
-				font-size: 14px; 
-				text-align: center;
-				background-color: #414042;
-				color: white;
-				border-color: none; 
-
-
-			}
-			#Progress {
-				width: 100%;
-				background-color: grey;
-				height: 30px;
-			}
-			#progress-color {
-				background-color: forestgreen;
-			}
-			#header{
-				padding-left: 20px;
-				background-color: white;
-				color: navy; 
-
-
-			}
-			.profile_pic{
-				float: right;
-			}
-			.panel-group .panel {
-				border-radius: 0;
-				box-shadow: none;
-				border-color: gainsboro;
-
-			}
-			.panel-default > .panel-heading {
-				padding: 0;
-				border-radius: 0;
-				color: #212121;
-				background-color: beige;
-				border-color: gray;
-			}
-			.panel-title {
-				font-size: 14px;
-			}
-			.panel-title > a {
-				display: block;
-				padding: 15px;
-				text-decoration: none;
-			}
-			.more-less {
-				float: right;
-				color: #212121;
-			}
-			.panel-default > .panel-heading + .panel-collapse > .panel-body {
-				border-top-color: #EEEEEE;
-				padding-left: 15px;
-			}
-			body {
-				background-color: white;
-			}
-			.demo {
-				padding-top: 60px;
-				padding-bottom: 60px;
-			}
-			#nav-gallery{
-				padding-top: 20px;
-				border-color: lightgray; 
-			}
-			.resume_container{
-				padding-top: 20px;
-			}
-			.panel-body{
-				font-size: 14px;
-
-			}
-			#myProgress {
-				width: 100%;
-				background-color: grey;
-			}
-
-			#myBar {
-				width: 1%;
-				height: 20px;
-				background-color: blue;
-			}
-			#body_row{
-				height: 50px; 
-			}
-
-			.card-title{
-				text-align: left; 
-			}
-			.card-text{
-				text-align: center;
-				font-size: 14px; 
-			}
-			.modal_button{
-				text-align: left; 
-			}
-
-			video {
-				width: 100%;
-				height: auto;
-			}
-			.card-body{
-				height: 30%;
-				padding: none; 
-
-			}
-			#video_deck{
-				height: 60%;
-			}
-			.card-text{
-				text-align: left;
-				font-size: 14px; 
-			}
-
-			#myImg {
-
-				cursor: pointer;
-				transition: 0.3s;
-				width: 100%; 
-			}
-
-			#myImg:hover {opacity: 0.7;}
-
-			/* The Modal (background) */
-			.modal {
-				display: none; /* Hidden by default */
-				position: fixed; /* Stay in place */
-				z-index: 1; /* Sit on top */
-				padding-top: 100px; /* Location of the box */
-				left: 0;
-				top: 0;
-				width: 100%; /* Full width */
-				height: 100%; /* Full height */
-				overflow: auto; /* Enable scroll if needed */
-				background-color: rgb(0,0,0); /* Fallback color */
-				background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-			}
-
-			/* Modal Content (image) */
-			.modal-content {
-				margin: auto;
-				display: block;
-				width: 80%;
-				max-width: 700px;
-			}
-
-			/* Caption of Modal Image */
-			#caption {
-				margin: auto;
-				display: block;
-				width: 80%;
-				max-width: 700px;
-				text-align: center;
-				color: #ccc;
-				padding: 10px 0;
-				height: 150px;
-			}
-
-			/* Add Animation */
-			.modal-content, #caption {  
-				-webkit-animation-name: zoom;
-				-webkit-animation-duration: 0.6s;
-				animation-name: zoom;
-				animation-duration: 0.6s;
-			}
-
-			@-webkit-keyframes zoom {
-				from {-webkit-transform:scale(0)} 
-				to {-webkit-transform:scale(1)}
-			}
-
-			@keyframes zoom {
-				from {transform:scale(0)} 
-				to {transform:scale(1)}
-			}
-
-			/* The Close Button */
-			.close {
-				position: absolute;
-				top: 15px;
-				right: 35px;
-				color: #f1f1f1;
-				font-size: 40px;
-				font-weight: bold;
-				transition: 0.3s;
-			}
-
-			.close:hover,
-			.close:focus {
-				color: #bbb;
-				text-decoration: none;
-				cursor: pointer;
-			}
-
-			/* 100% Image Width on Smaller Screens */
-			@media only screen and (max-width: 700px){
-				.modal-content {
-					width: 100%;
-				}
-			}
-
-
-
-
-
-
-		</style>
-
-	</head>
-
-	<body>
-		<div class="background" >
-					
-
-			<div class="container">    
-
-				<div class="fb-customerchat"
-					 page_id="327561624502827">
-				</div>
-
-
-				<div class="card" id="header">
-					<div class="row">
-						<div class="col-sm-10"> 
-							<h1> I am Hasan </h1> Chief Technology Evangelist at CodeMarshal
-						</div>
-						<div class="col-sm-1">
-							<img src="me2.jpg">
-						</div>
-					</div>
-				</div>
-				<hr> 
-				<nav>
-					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Resume</a>
-
-						<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Portfolio</a>
-
-						<a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-nav-gallery" aria-selected="false">Gallery</a>
-
-
-
-					</div>
-				</nav>
-				<div class="tab-content" id="myTabContent">
-
-					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-
-
-
-						<div class="resume_container">
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTwo">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												<i class="more-less fa fa-plus"></i>
-												EXPERTISE | tech product research & design, user research, evangelism, and business model development  
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										<div class="panel-body">
-
-											<li> Good understanding with tech startup business model </li>
-
-											<li> Experienced as a core team member on Tech product research and design </li>
-
-											<li> Advanced command on high fidelity software prototype design with relevant tools </li> 
-
-											<li> Fluent to do software product evangelism using text, graphics, audio and video </li>
-
-											<li> Capable to conduct user research, UX/UI research etc. </li>
-
-											<li> Domain knowledge on technical writing, static/interactive documentation and content development</li>
-
-											<li> Active player providing inputs for business model design and development </li>
-
-											<li> Familiar with software product development process, front end material design etc. </li>
-
-											<br> 
-
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingThree">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												<i class="more-less fa fa-plus"></i>
-												EXPERIENCE | have total 4 years experience in tech product design, research, and university teaching
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div class="panel-body">
-											<p> <b> CodeMarshal IT Systems Ltd, Formerly, Mukto Software Ltd, Dhaka, www.codemarshal.com <br> Chief Technology Evangelist, October 2016 to present</b> </p> 
-											<li>Core team member of EdTech product design, business model design and conducting user research </li>
-											<li>Responsible for designing high fidelity prototype of startup product ideation</li>
-											<li>Responsible for product evangelism, product research, pitch deck design, technical writing and documentation</li>
-											<br>
-
-											<p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Research Associate, September 2015 to September 2016 </b></p> 
-											<li>Conducted research on EdTech, technology trends, technology innovation and management, academic development</li>
-											<li>Coordinated the research activities of preparing ‘self-assessment report’, a project of DIU, funded by UNESCO. </li>
-											<li>Conducted fundamental teaching load (computer fundamentals, electronic devices and circuit) </li> <br>
-
-											<p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Part-time Lecturer, April 2015 to December 2016 </b></p> 
-											<li>Conducted teaching load (computer fundamentals, electronic devices, electrical circuit) </li>
-											<br>
-
-											<p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Intern at Management, January 2014 to March 2014 </b></p>
-											<li> Learned hands on knowledge on the field of academic project management, ICT in education, technology innovation and management etc.</li>
-
-											<br>
-
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFour">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-												<i class="more-less fa fa-plus"></i>
-												TRAININGS | gone through 15+ online courses on relevant fields from 'Udacity' and 'Coursera'
-											</a>
-										</h4>
-									</div>
-									<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-										<div class="panel-body">
-
-											<p> <b> Relevant and Professional online courses I have gone through: </b> </p> 
-
-											<li>How to Build a Startup, The Lean Launchpad by Steve Blank, Udacity</li>
-											<li>Get Your Startup Started, Udacity</li>
-											<li>Product Design, Udacity </li>
-											<li>Intro to the Design of Everyday Things </li>
-											<li>Rapid Prototyping, Udacity</li>
-											<li>Engagement and Monetization-Mobile Game, Udacity </li>
-											<li>Human-Computer Interaction, Udacity</li>
-											<li>Web Accessibility, Udacity </li>
-											<li>A/B Testing for Business Analysts, Udacity</li>
-											<li>Educational Technology, Udacity</li>
-											<li>Data and Visual Analytics, Udacity</li>
-											<li>Software Development Process, Udacity</li>
-											<li>Software Architecture and Design, Udacity</li>
-											<li>App Marketing, Udacity </li>
-											<li>Intro to Psychology, Udacity</li>
-
-											<br>
-
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFive">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-												<i class="more-less fa fa-plus"></i>
-												EDUCATION | persued four years bachelor degree in electrical and electronic engineering
-											</a>
-										</h4>
-									</div>
-									<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-										<div class="panel-body">
-											<p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br> Bachelor of Science in Electrical and Electronic Engineering, January 2011 December 2014 </b></p>
-											<li>CGPA: 3.56 in scale of 4.00 </li>
-											<li>Electrical, electronics, information and communication technology  </li>
-											<br>
-
-											<p><b>Kushtia Government College, Kushtia <br> Higher Secondary School Certificate (HSC), 2009 </b></p>
-											<li>GPA: 4.50 in scale of 5.00 </li>
-											<li>Science  </li>
-											<br>
-
-											<p><b>Tentulbaria Islamia High School, Gangni, Meherpur <br> Secondary School Certificate (SSC), 2007 </b></p>
-											<li>GPA: 5.00 in scale of 5.00 </li>
-											<li>Science </li>
-											<br>
-
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingSix">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-												<i class="more-less fa fa-plus"></i>
-												KEY SKILLS  | have professional command on wide range of  relavant and essential software tools 
-											</a>
-										</h4>
-									</div>
-									<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-										<div class="panel-body">
-
-											Static documentation: MS Word, MS Excel, Latex, Propozyfy.biz
-											<div class="progress">
-												<div class="progress-bar" id="progress-color" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
-											</div> <br>
-
-											Interective documentation: Slate (markdown), Adobe InDesign
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-											</div> <br>
-
-											Professional presentation: MS Power Point, Keynote, Prezi, Video Scribe
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
-											</div> <br>
-
-											Interactive prototype (UX/UI): Proto.io and Mockup Plus
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
-											</div> <br>
-
-											Mind mapping: Xmind, Coggle, iMindMap
-											<div class="progress">
-												<div class="progress-bar"  id="progress-color"  role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
-											</div> <br>
-
-											Use case design and writing: Draw.io, ERD Plus
-											<div class="progress">
-												<div class="progress-bar" id="progress-color" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-											</div> <br>
-
-											Digital marketing: Buffer, MailChimp
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-											</div> <br>
-
-											Promotional material design: Canva
-											<div class="progress">
-												<div class="progress-bar" id="progress-color" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-											</div> <br>
-
-											Photo editing: Photoshop, Illustrator, Photoscape
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
-											</div> <br>
-
-											Video editing: Premiere Pro, Final Cut Pro, After Effects (basic)
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"   role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-											</div> <br>
-
-											Audio editing: Audition, Audacity, MP3 Editor
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-											</div> <br>
-
-											Web analytics: Google Analytics, Google Keyword Planner, Google Trends
-											<div class="progress">
-												<div class="progress-bar" id="progress-color" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-											</div> <br>
-
-											Data visualization and analytics: Tableau, Infogram
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
-											</div> <br>
-
-											Basic programming languages: C, HTML and CSS
-											<div class="progress">
-												<div class="progress-bar" id="progress-color"  role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-
-											</div> <br>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingSeven">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-												<i class="more-less fa fa-plus"></i>
-												PUBLICATIONS | credited with five publications including jouranl articles and conference papers  
-											</a>
-										</h4>
-									</div>
-									<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-										<div class="panel-body">
-
-											<li><b>Journal Papers</b></li>
-
-											<p>M. R. Mia, M. Hasanuzzaman, M. F. Rahman, M. S. Rahman and T. R Choudhury, ‘Analysis of the Treatment of Industrial Waste Water Using High Voltage Discharge’ PP-6, Bangladesh Physical Society (BPS), 25th April,  2015 </p>
-
-											<p>Md. Hasanuzzaman, Md. Mahmudul Hasan, Md. Rasel Mia, A. K. M. Fazlul Hoque  ‘Distributed Home Appliances Control System Using MATLAB’, Institution of Engineers, Bangladesh (IEB), Annual Paper Meet, Electrical Engineering (APMEE) 2013-2014. </p>
-
-											<br> 
-
-											<li> <b> Conference papers </b> </li>
-
-											<p>M. R. Mia, M. Hasanuzzaman, M. F. Rahman, M. S. Rahman and T. R Choudhury, ‘Analysis of the Treatment of Industrial Waste Water Using High Voltage Discharge’ PP-6, Bangladesh Physical Society (BPS), 25th April,  2015 </p>
-
-											<p>Md. Hasanuzzaman, Md. Mahmudul Hasan, Rifat Abdullah Akhi ‘Autonomous Campus Lighting System Based on Solar Energy and LEDs’, National Conference on Digital Society, SMS-1 08, Bangladesh Electronics Society (BES), 26th June 2014.  </p>
-
-											<p>Md. Mahmudul Hasan, Md. Hasanuzzaman, Md. Rasel Mia, A. K. M. Fazlul Hoque ‘Design and Implementation of a Digital Security Lock Using Microcontroller’, National Conference on Digital Society, I-III 06, Bangladesh Electronics Society, 26th June 2014. </p>
-
-
-
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingEight">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-												<i class="more-less fa fa-plus"></i>
-												MANAGEMENT & LEADERSHIP | participated and led various social and educational voluntary activities 
-											</a>
-										</h4>
-									</div>
-									<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-										<div class="panel-body">
-											<p>EEE ALUMNI ASSOCIATION, Daffodil International University, Dhaka <br> General Secretary, July 2015 to Nov 2018 <</p>
-											<p>Daffodil International University Nature Study Club, Dhaka <br> President, January 2015 to September 2015 </p>
-											<p>‘Prosfuton’-a regional educational and social welfare organization, Meherpur, Bangladesh <br>Vice President, July 2014 to July 2015 </p>
-											<p>Daffodil International University Debating Club, Dhaka <br> Member, January 2011 to December 2012 </p>
-
-										</div>
-									</div>
-								</div>
-
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingNine">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-												<i class="more-less fa fa-plus"></i>
-												OTHER INFO | gone through relevant professional books, senimars and workshops
-											</a>
-										</h4>
-									</div>
-									<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-										<div class="panel-body">
-
-											<p> <b>Relevant and Professional books I have read: </b> </p> 
-
-											<div class="card_container">
-												<div class="card-deck">
-													<div class="card">
-														<img class="card-img-top" src="ZeroToOne.jpg" alt="Card image cap">
-
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="IntellegentInvestor.jpg" alt="Card image cap">
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="LeadInsideTheBox.jpg" alt="Card image cap">
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="DontMakeMeThink.jpg" alt="Card image cap">
-
-													</div>
-
-												</div>
-											</div>
-
-											<div class="card_container">
-												<div class="card-deck">
-													<div class="card">
-														<img class="card-img-top" src="TheLeanStartup.jpg" alt="Card image cap">
-
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="TheFiveDysfunctionOfATeam.jpg" alt="Card image cap">
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="PowerOfPositiveThinking.jpg" alt="Card image cap">
-
-													</div>
-
-													<div class="card">
-														<img class="card-img-top" src="SubtleArtOfNotGivingAFuck.png" alt="Card image cap">
-
-													</div>
-
-												</div>
-											</div>
-
-
-
-											<br>
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTen">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-												<i class="more-less fa fa-plus"></i>
-												PERSONAL DETAILS | born on 2nd March in 1990 at Meherpur and currrently living in Dhaka, Bangladesh
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-										<div class="panel-body">
-											<li>Name: Md. Hasanuzzaman</li>
-											<li>Name of Father: Md. Abdul Goni  </li>
-											<li>Name of Mother: Hasena Khatun </li>
-											<li>Permanent Address: Village-Tentulbaria </li>
-											<li>Post Office: Polashi Para, 7110 </li>
-											<li>Police Station: Gangni </li>
-											<li>District: Meherpur  </li>
-											<li>Division: Khulna </li>
-											<li>Country: Bangladesh </li>
-											<li>Marital Status: Single </li>
-											<li>Date of Birth: 2nd March 1990 </li>
-											<li>Sex: Male </li>
-											<li>Blood Group: A + </li>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-
-					</div>
-
-					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-						<div class="card_container">
-
-							<div class="card-deck">
-
-								<div class="card">
-									<div >
-										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-											<ol class="carousel-indicators">
-												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											</ol>
-
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block w-100" src="Ronangon_1.jpg" alt="First slide">
-													<div class="carousel-caption d-none d-md-block">
-
-													</div>
-												</div>
-											</div>
-
-											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
-											</a>
-										</div>
-									</div>
-
-									<div>
-										<h5 class="card-title">Project: Ronangon (ongoing) </h5>
-										<div class="card-text">
-											<p> Ronangon is a puzzle solving game and contest platform based on the liberation war of Bangladesh. It helps students learn the basics of programming, math, science and analytical ability. </p>
-
-											<p>My contributions: </p>
-											<li> Designed high fidelity prototype</li>
-											<li> Provided a number of inputs for product design</li>
-											<li> Played a role for business model design </li>
-											<li> Generated concepts for level design</li>
-											<li> Documented project proposal </li>
-											<li> Edited product promo video </li>
-
-
-										</div>
-
-									</div>
-								</div>
-
-
-								<div class="card">
-									<div >
-										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-											<ol class="carousel-indicators">
-												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											</ol>
-
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block w-100" src="Shekho_1.JPG" alt="First slide">
-													<div class="carousel-caption d-none d-md-block">
-
-													</div>
-												</div>
-											</div>
-
-											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
-											</a>
-										</div>						
-									</div>
-									<div>
-										<h5 class="card-title">Project: Shekho (ongoing) </h5>
-										<div class="card-text">
-											<p> Shekho is a smart virtual teacher for elementary math in Bangla. It helps students to learn and practice math concepts in their curriculum, automatically judge their performance and get personalized assistance. </p>
-
-											<p>My contributions: </p>
-											<li> Played core role for product design </li>
-											<li> Designed high fidelity Prototype </li>
-											<li> Conducted market and product research</li>
-											<li> Developed content for demo product </li>
-											<li> Generated buffer marketing concepts </li>
-											<li> Made product demonstration and promo video </li>
-
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-
-						<div class="card_container">
-							<div class="card-deck">
-
-
-								<div class="card">
-									<div >
-										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-											<ol class="carousel-indicators">
-												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											</ol>
-
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block w-100" src="NoboPay1.png" alt="First slide">
-													<div class="carousel-caption d-none d-md-block">
-
-													</div>
-												</div>
-											</div>
-
-											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
-											</a>
-										</div>
-									</div>
-
-									<div>
-										<h5 class="card-title">Project: NoboPay </h5>
-										<div class="card-text">
-											<p> NoboPay is an online Payment Gateway System in Bangladesh that allows both individuals and businesses to accept secured payments over internet for selling services or products. Using NoboPay web portal, registered merchant and client can accept secured online payments, manage e-wallet, make payout to bank account, manage customer subscriptions/products/services, view reports/settlements, and other features.  </p>
-
-											<p>My contributions: </p>
-											<li> Conducted product and market research  </li>
-											<li> Wrote and designed product use cases </li>
-											<li> Prepared solution design document </li>
-											<li> Prepared interactive web API documentation </li>
-
-
-										</div>
-
-									</div>
-
-								</div>
-
-
-								<div class="card">
-									<div >
-										<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-											<ol class="carousel-indicators">
-												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											</ol>
-
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block w-100" src="eshikkha_2.jpg" alt="First slide">
-													<div class="carousel-caption d-none d-md-block">
-
-													</div>
-												</div>
-											</div>
-
-											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
-											</a>
-										</div>
-									</div>
-
-									<div>
-										<h5 class="card-title">Project: Eshikkha</h5>
-										<div class="card-text">
-											<p> Eshikkha is the next generation platform for learning elementary programming in Bangla. It helps students to learn and practice programming, automatically judge their performance and get personalized assistance. </p>
-
-											<p>My contributions: </p>
-											<li> Conducted end-user testing </li>
-											<li> Conducted UX & UI enhancement research </li>
-											<li> Wrote user manual in Bangla and English </li>
-											<li> Documented project proposal </li>
-											<li> Designed pitch deck for extending next phase </li>
-											<li> Edited product demonstration and promo video </li>
-
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-					</div>
-
-					<div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
-
-						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active" id="fill">
-									<img class="d-block w-100" src="sonargoan_1.jpg" alt="First slide">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Sonargoan Tour with CodeMarshal Team </h5>
-
-									</div>
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="monpura_1.jpg" alt="Second slide">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Monpura Island Tour with CodeMarshal Team </h5>
-
-									</div>
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="novem_resort_1.JPG" alt="Third slide">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Sreemangal Tour with CodeMarshal Team </h5>
-
-									</div>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-
-
-
-								<div class="card">
-
-									<img id="myImg" src="me&zi.jpg" alt="I am with professor Muhammed Zafar Iqbal, PhD " style="width:100%">
-
-									<div >
-										<p class="card-text"> I am with Professor Dr. Muhammed Zafar Iqbal in the national conference of Bangladesh Physical Society, 2014. I was the youngest paper presenter in that conference [Year: 2014]. </p>
-									</div>
-
-									<!-- The Modal -->
-
-									<div id="myModal" class="modal">
-										<span class="close">&times;</span>
-										<img class="modal-content" id="img01">
-										<div id="caption"></div>
-									</div>
-
-								</div>
-
-								<div class="card">
-
-									<img id="myImg" src="me&mlr.jpg" alt="Rickshaw riding with professor Lutfar Rahman, PhD " style="width:100%">
-
-									<div >
-
-										<p class="card-text"> Rickshaw riding with Professor Dr. M. Lutfar Rahman. I was the special research associate to him while he was the emeritus professor at Daffodil International University [Year: 2016]. </p>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="me&kykobad.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> I am with Professor Dr. Mohammad Kaykobad in a seminar titled "Game Based Learning System" arranged by dept. of CSE at University of Dhaka in association with China [Year: 2015].  </p>
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="me&mlr_family.jpg" alt="Card image cap">
-									<div>
-										<p class="card-text"> Professor Dr. M. Lutfar Rahman along with his family visited me in my residence. He loved to eat "Mashkalai-Pulses" [Year: 2018]. </p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="me&unesco.jpg" alt="Card image cap">
-									<div >
-										<p class="card-title"> <b>    </b></p>
-										<p class="card-text">Selfie with IAU Secretary General Eva Egron-Polak (right in the picture) in a workshop regarding internationalization of higher study organized by DIU at The Westin hotel, Dhaka, [Year: 2015] </p>
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="me&yang.jpg" alt="Card image cap">
-									<div >									
-										<p class="card-text">At coffee shop with Sandy Yang at Mirpur, Dhaka, Bangladesh. He teaches Chinese language at BRAC University [Year: 2017]. </p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="me&akmfh.jpg" alt="Card image cap">
-									<div>
-										<p class="card-title"> <b>  </b></p>
-										<p class="card-text"> I am with Professor Dr. Engr A. K. M. Fazlul Hoque. He is the registrar of DIU and former director of Atomic Energy Centre Dhaka. He was my respected teacher and supervisor of two research projects also [Year: 2016]. </p>
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="me&ah.jpg" alt="Card image cap">
-									<div>
-										<p class="card-title"> <b>  </b></p>
-										<p class="card-text">I am with Cartoonist Ahsan Habib in a program of DIU. He is the Chief Editor of 'Unmad Magazine', and  the youngest brother of Humayun Ahmed and Mohammed Zafar Iqbal [Year: 2015].</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="card_container">
-							<div class="card-deck">
-
-								<div class="card">
-									<img class="card-img-top" src="me&ceo.jpg" alt="Card image cap">
-									<div >
-
-										<p class="card-text">Funny moment with Mr. Mahmudur Rahman, CEO of CodeMarshal. We tried to become model for the play card in the left side-"Don't disturb the wild animals and keep calm". The picture was taken at the Lawachara National Park, Sreemangal, Sylhet [Year: 2018]. </p>
-									</div>
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="me&emyl.jpg" alt="Card image cap">
-									<div >
-
-										<p class="card-text"> Selfie on the rooftop of Launch. In the picture, a junior intern colleague of CodeMarshal (in the left); Mr. Nahid Iftekhar Emyl, General Manager, Corporate Strategy at Robi Axiata Limited and Advisor of CodeMarshal (in the middle) and Mr. Towhid Jayed (in the right) [Year: 2018]</p>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="me&mymom.jpg" alt="Card image cap">
-									<div>
-										<p class="card-text"> At super shop with my mother, weekend groceries shoping at supershop, Dhaka [Year: 2018]. </p>
-
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="me&mlr3.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> At the Ashulia green campus of DIU with honorable vice chancellor, Professor Dr. M. Lutfar Rahman [Year: 205]. </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="diucolegue.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text">  I am with DIU colleagues in a program of newly appointed faculty members of CSE department [Year: 2015]. </p>
-
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="mujibnagar.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> I am with a group of my friends showing respect to the martyrs of Bangladesh liberation war at Mujibnagar memorial, Meherpur, Bangladesh [Year: 2017]. </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="kgc.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> At Kushtia Govt. College with my university friends [Year: 2017]. </p>
-
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="bikeatchuadanga.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> Biking with village-friends at Chuyadanga district, Bangladesh [Year: 2018]. </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="3idiots.jpg" alt="Card image cap">
-									<div>
-										<p class="card-text">  I am with my two best friends of university life  [Year:2018] </p>
-
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="bullfight.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> Funny bull-fight with my junior colleague-Shakil Ahmed at Sonargoan, Bangladesh [Year: 2018]. </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="childpark.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> Childish joyride with my friends at children park, Meherpur [Year: 2017].</p>
-
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="junglehunting.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> Jungle hunting with my friends at Meherpur district [Year:2017]. </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card_container">
-							<div class="card-deck">
-								<div class="card">
-									<img class="card-img-top" src="kushtiamunicipal.jpg" alt="Card image cap">
-									<div >
-										<p class="card-text"> At Kushtia municipal gate with my friends [Year: 2017].</p>
-									</div>
-
-								</div>
-
-								<div class="card">
-									<img class="card-img-top" src="CyclingatDOHS.jpg" alt="Card image cap">
-									<div>
-										<p class="card-text"> I love Cycling at afternoon in my free time. The picture is taken from Mirpur DOHS [Year: 2018] </p>
-
-									</div>
-								</div>
-							</div>
-
-						</div> 
-
-					</div>
-					<hr>
-
-					<div class="card" id="footer">
-						<div>
-							<p> Copyright&copy;2018 by Md. Hasanuzzaman  </p>
-
-							<p> 28/8, Block-A, Mirpur-12, Pallabi, Dhaka-1216, iamhasan.info@gmail.com, +880 1927783898 </p>                                          
-							<div>
-								<div class="text-center center-block">
-									<a href="https://www.facebook.com/cap.hasan"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-									<a href="https://www.linkedin.com/in/hasaneee"><i id="social-gp" class="fa fa-linkedin-square fa-2x social"></i></a>
-									<a href="https://twitter.com/Hello2Hasan"><i id="social-tw" class="fa fa-twitter-square fa-2x social "></i></a>
-									<a href="https://www.youtube.com/channel/UC5C2K4-PGngdeUmBsWJ5abw?view_as=subscriber"><i id="social-em" class="fa fa-youtube-square fa-2x social"></i></a>
-								</div>
-							</div>
-						</div>
-					</div> 
-
-
-					<script>
-						var coll = document.getElementsByClassName("collapsible");
-						var i;
-						for (i = 0; i < coll.length; i++) {
-							coll[i].addEventListener("click", function() {
-								this.classList.toggle("active");
-								var content = this.nextElementSibling;
-								if (content.style.display === "block") {
-									content.style.display = "none";
-								} 
-								else {
-									content.style.display = "block";
-								}});
-						}
-
-						function move() {
-							var elem = document.getElementById("myBar"); 
-							var width = 1;
-							var id = setInterval(frame, 10);
-							function frame() {
-								if (width >= 100) {
-									clearInterval(id);
-								} else {
-									width++; 
-									elem.style.width = width + '%'; 
-								}
-							}
-						}
-
-						function toggleIcon(e) {
-							$(e.target)
-								.prev('.panel-heading')
-								.find(".more-less")
-								.toggleClass('fa-plus fa-minus');
-						}
-						$('.panel-group').on('hidden.bs.collapse', toggleIcon);
-						$('.panel-group').on('shown.bs.collapse', toggleIcon);
-
-
-						// Get the modal
-						var modal = document.getElementById('myModal');
-
-						// Get the image and insert it inside the modal - use its "alt" text as a caption
-
-						var img = document.getElementById('myImg');
-						var modalImg = document.getElementById("img01");
-						var captionText = document.getElementById("caption");
-						img.onclick = function(){
-							modal.style.display = "block";
-							modalImg.src = this.src;
-							captionText.innerHTML = this.alt;
-						}
-
-						// Get the <span> element that closes the modal
-
-						var span = document.getElementsByClassName("close")[0];
-
-						// When the user clicks on <span> (x), close the modal
-						span.onclick = function() { 
-							modal.style.display = "none";
-						}
-
-						function onClick(element) {
-							document.getElementById("img01").src = element.src;
-							document.getElementById("modal01").style.display = "block";
-						}
-
-
-						// Get the facebook chatbot SDK
-
-						window.fbAsyncInit = function() {
-							FB.init({
-								appId            : 'your-app-id',
-								autoLogAppEvents : true,
-								xfbml            : true,
-								version          : 'v3.2'
-							});
-						};
-
-						(function(d, s, id){
-							var js, fjs = d.getElementsByTagName(s)[0];
-							if (d.getElementById(id)) {return;}
-							js = d.createElement(s); js.id = id;
-							js.src = "https://connect.facebook.net/en_US/sdk.js";
-							fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));
-
-					</script>
-
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scle=1">
+        <meta name="description" content=" This is a personal website of Md. Hasanuzzzaman" />
+        <meta name="keywords" content="Hasan" />
+        <meta name="author" content="Md. Hasanuzzaman"/>
+
+        <title>Md. Hasanuzzaman</title>
+
+        <link rel="icon" href="me2.jpg" type="image/gif" sizes="16x16">	
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <style>
+
+            .background{
+                max-height: 100%;
+                max-width: 100%; 
+                background-color: darkgray; 
+
+            }
+            .container{
+                -webkit-box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
+                -moz-box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
+                box-shadow: 5px 10px 59px 2px rgba(122,122,122,1);
+                max-width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: white;
+
+            }
+            /* @media only screen and (max-width: 300px) {
+            .main{
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;       
+
+            }
+
+            } */
+
+            .collapsible {
+                margin-top: 20px;
+                background-color:dimgray;
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                font-family: raleway;
+
+            }
+            .active, .collapsible:hover {
+                background-color: dodgerblue;
+            }
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+            .tab-pane{
+                background-color: white;
+            }
+            .progress{
+                margin-top: 5px;
+
+            }
+            .card_container{
+                margin-top: 20px;
+            }
+
+            .card{
+                padding: 15px;
+            }
+            }
+            #nav-gallery{
+                margin-top: 20px;
+            }
+            #footer{
+                margin-top: 20px;
+                font-size: 14px; 
+                text-align: center;
+                background-color: #414042;
+                color: white;
+                border-color: none; 
+
+
+            }
+            #Progress {
+                width: 100%;
+                background-color: grey;
+                height: 30px;
+            }
+            #progress-color {
+                background-color: forestgreen;
+            }
+            #header{
+                padding-left: 20px;
+                background-color: white;
+                color: navy; 
+
+
+            }
+            .profile_pic{
+                float: right;
+            }
+            .panel-group .panel {
+                border-radius: 0;
+                box-shadow: none;
+                border-color: gainsboro;
+
+            }
+            .panel-default > .panel-heading {
+                padding: 0;
+                border-radius: 0;
+                color: #212121;
+                background-color: beige;
+                border-color: gray;
+            }
+            .panel-title {
+                font-size: 14px;
+            }
+            .panel-title > a {
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+            }
+            .more-less {
+                float: right;
+                color: #212121;
+            }
+            .panel-default > .panel-heading + .panel-collapse > .panel-body {
+                border-top-color: #EEEEEE;
+                padding-left: 15px;
+            }
+            body {
+                background-color: white;
+            }
+            .demo {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            #nav-gallery{
+                padding-top: 20px;
+                border-color: lightgray; 
+            }
+            .resume_container{
+                padding-top: 20px;
+            }
+            .panel-body{
+                font-size: 14px;
+
+            }
+            #myProgress {
+                width: 100%;
+                background-color: grey;
+            }
+
+            #myBar {
+                width: 1%;
+                height: 20px;
+                background-color: blue;
+            }
+            #body_row{
+                height: 50px; 
+            }
+
+            .card-title{
+                text-align: left; 
+            }
+            .card-text{
+                text-align: center;
+                font-size: 14px; 
+            }
+            .modal_button{
+                text-align: left; 
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .card-body{
+                height: 30%;
+                padding: none; 
+
+            }
+            #video_deck{
+                height: 60%;
+            }
+            .card-text{
+                text-align: left;
+                font-size: 14px; 
+            }
+
+            #myImg {
+
+                cursor: pointer;
+                transition: 0.3s;
+                width: 100%; 
+            }
+
+            #myImg:hover {opacity: 0.7;}
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+
+            /* Modal Content (image) */
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+
+            /* Add Animation */
+            .modal-content, #caption {  
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+            }
+
+            @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+
+            /* The Close Button */
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                    width: 100%;
+                }
+            }
+
+
+
+            /* Timeline 
+
+            ul.timeline {
+            list-style-type: none;
+            position: relative;
+            padding-left: none;  
+            }
+            ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+
+            }
+            ul.timeline > li {
+            padding-left: 20px;
+            }
+            ul.timeline > li:before {
+            content: ' ';
+            background: white;
+
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+
+            }
+            */
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="background" >
+
+
+            <div class="container">    
+
+                <div class="fb-customerchat"
+                     page_id="327561624502827">
+                </div>
+
+
+                <div class="card" id="header">
+                    <div class="row">
+                        <div class="col-sm-10"> 
+                            <h1> I am Hasan </h1> Chief Technology Evangelist at CodeMarshal
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="me2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <hr> 
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Resume</a>
+
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Portfolio</a>
+
+                        <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-nav-gallery" aria-selected="false">Gallery</a>
+
+
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+
+
+                        <div class="resume_container">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="more-less fa fa-plus"></i>
+                                                EXPERTISE | tech product research & design, user research, evangelism, and business model development  
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+
+                                            <li> Good understanding with tech startup business model </li>
+
+                                            <li> Experienced as a core team member on Tech product research and design </li>
+
+                                            <li> Advanced command on high fidelity software prototype design with relevant tools </li> 
+
+                                            <li> Fluent to do software product evangelism using text, graphics, audio and video </li>
+
+                                            <li> Capable to conduct user research, UX/UI research etc. </li>
+
+                                            <li> Domain knowledge on technical writing, static/interactive documentation and content development</li>
+
+                                            <li> Active player providing inputs for business model design and development </li>
+
+                                            <li> Familiar with software product development process, front end material design etc. </li>
+
+                                            <br> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="more-less fa fa-plus"></i>
+                                                EXPERIENCE | have total 4 years experience in tech product design, research, and university teaching
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+
+
+
+                                            <!-- timeline
+
+<div class="row" style="padding-right: 20px">
+<div>
+<ul class="timeline">
+<li>
+<a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+<a href="#" class="float-right">21 March, 2014</a>
+<p>Core team member of EdTech product design | business model design and conducting user research | Responsible for designing high fidelity prototype of startup product ideation | Responsible for product evangelism  | product research, pitch deck design, technical writing and documentation</p>
+
+
+</li>
+<li>
+<a href="#">21 000 Job Seekers</a>
+<a href="#" class="float-right">4 March, 2014</a>
+<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudinCurabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+</li>
+<li>
+<a href="#">Awesome Employers</a>
+<a href="#" class="float-right">1 April, 2014</a>
+<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+</li>
+</ul>
+</div>
+</div>
+
+-->
+
+
+                                            <p> <b> CodeMarshal IT Systems Ltd, Formerly, Mukto Software Ltd, Dhaka, www.codemarshal.com <br> Chief Technology Evangelist, October 2016 to present</b> </p> 
+                                            <li>Core team member of EdTech product design, business model design and conducting user research </li>
+                                            <li>Responsible for designing high fidelity prototype of startup product ideation</li>
+                                            <li>Responsible for product evangelism, product research, pitch deck design, technical writing and documentation</li>
+                                            <br>
+
+                                            <p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Research Associate, September 2015 to September 2016 </b></p> 
+                                            <li>Conducted research on EdTech, technology trends, technology innovation and management, academic development</li>
+                                            <li>Coordinated the research activities of preparing ‘self-assessment report’, a project of DIU, funded by UNESCO. </li>
+                                            <li>Conducted fundamental teaching load (computer fundamentals, electronic devices and circuit) </li> <br>
+
+                                            <p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Part-time Lecturer, April 2015 to December 2016 </b></p> 
+                                            <li>Conducted teaching load (computer fundamentals, electronic devices, electrical circuit) </li>
+                                            <br>
+
+                                            <p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br>Intern at Management, January 2014 to March 2014 </b></p>
+                                            <li> Learned hands on knowledge on the field of academic project management, ICT in education, technology innovation and management etc.</li>
+
+                                            <br>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <i class="more-less fa fa-plus"></i>
+                                                TRAININGS | gone through 15+ online courses on relevant fields from 'Udacity' and 'Coursera'
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body">
+
+                                            <p> <b> Relevant and Professional online courses I have gone through: </b> </p> 
+
+                                            <li>How to Build a Startup, The Lean Launchpad by Steve Blank, Udacity</li>
+                                            <li>Get Your Startup Started, Udacity</li>
+                                            <li>Product Design, Udacity </li>
+                                            <li>Intro to the Design of Everyday Things </li>
+                                            <li>Rapid Prototyping, Udacity</li>
+                                            <li>Engagement and Monetization-Mobile Game, Udacity </li>
+                                            <li>Human-Computer Interaction, Udacity</li>
+                                            <li>Web Accessibility, Udacity </li>
+                                            <li>A/B Testing for Business Analysts, Udacity</li>
+                                            <li>Educational Technology, Udacity</li>
+                                            <li>Data and Visual Analytics, Udacity</li>
+                                            <li>Software Development Process, Udacity</li>
+                                            <li>Software Architecture and Design, Udacity</li>
+                                            <li>App Marketing, Udacity </li>
+                                            <li>Intro to Psychology, Udacity</li>
+
+                                            <br>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                <i class="more-less fa fa-plus"></i>
+                                                EDUCATION | persued four years bachelor degree in electrical and electronic engineering
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                        <div class="panel-body">
+                                            <p><b>Daffodil International University, Dhaka, www.daffodilvarsity.edu.bd <br> Bachelor of Science in Electrical and Electronic Engineering, January 2011 December 2014 </b></p>
+                                            <li>CGPA: 3.56 in scale of 4.00 </li>
+                                            <li>Electrical, electronics, information and communication technology  </li>
+                                            <br>
+
+                                            <p><b>Kushtia Government College, Kushtia <br> Higher Secondary School Certificate (HSC), 2009 </b></p>
+                                            <li>GPA: 4.50 in scale of 5.00 </li>
+                                            <li>Science  </li>
+                                            <br>
+
+                                            <p><b>Tentulbaria Islamia High School, Gangni, Meherpur <br> Secondary School Certificate (SSC), 2007 </b></p>
+                                            <li>GPA: 5.00 in scale of 5.00 </li>
+                                            <li>Science </li>
+                                            <br>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                <i class="more-less fa fa-plus"></i>
+                                                KEY SKILLS  | have professional command on wide range of  relavant and essential software tools 
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="panel-body">
+
+                                            Static documentation: MS Word, MS Excel, Latex, Propozyfy.biz
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                            </div> <br>
+
+                                            Interective documentation: Slate (markdown), Adobe InDesign
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div> <br>
+
+                                            Professional presentation: MS Power Point, Keynote, Prezi, Video Scribe
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                            </div> <br>
+
+                                            Interactive prototype (UX/UI): Proto.io and Mockup Plus
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                            </div> <br>
+
+                                            Mind mapping: Xmind, Coggle, iMindMap
+                                            <div class="progress">
+                                                <div class="progress-bar"  id="progress-color"  role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div> <br>
+
+                                            Use case design and writing: Draw.io, ERD Plus
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                            </div> <br>
+
+                                            Digital marketing: Buffer, MailChimp
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div> <br>
+
+                                            Promotional material design: Canva
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                            </div> <br>
+
+                                            Photo editing: Photoshop, Illustrator, Photoscape
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                            </div> <br>
+
+                                            Video editing: Premiere Pro, Final Cut Pro, After Effects (basic)
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"   role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div> <br>
+
+                                            Audio editing: Audition, Audacity, MP3 Editor
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div> <br>
+
+                                            Web analytics: Google Analytics, Google Keyword Planner, Google Trends
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                            </div> <br>
+
+                                            Data visualization and analytics: Tableau, Infogram
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                            </div> <br>
+
+                                            Basic programming languages: C, HTML and CSS
+                                            <div class="progress">
+                                                <div class="progress-bar" id="progress-color"  role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+                                            </div> <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                <i class="more-less fa fa-plus"></i>
+                                                PUBLICATIONS | credited with five publications including jouranl articles and conference papers  
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                        <div class="panel-body">
+
+                                            <li><b>Journal Papers</b></li>
+
+                                            <p>M. R. Mia, M. Hasanuzzaman, M. F. Rahman, M. S. Rahman and T. R Choudhury, ‘Analysis of the Treatment of Industrial Waste Water Using High Voltage Discharge’ PP-6, Bangladesh Physical Society (BPS), 25th April,  2015 </p>
+
+                                            <p>Md. Hasanuzzaman, Md. Mahmudul Hasan, Md. Rasel Mia, A. K. M. Fazlul Hoque  ‘Distributed Home Appliances Control System Using MATLAB’, Institution of Engineers, Bangladesh (IEB), Annual Paper Meet, Electrical Engineering (APMEE) 2013-2014. </p>
+
+                                            <br> 
+
+                                            <li> <b> Conference papers </b> </li>
+
+                                            <p>M. R. Mia, M. Hasanuzzaman, M. F. Rahman, M. S. Rahman and T. R Choudhury, ‘Analysis of the Treatment of Industrial Waste Water Using High Voltage Discharge’ PP-6, Bangladesh Physical Society (BPS), 25th April,  2015 </p>
+
+                                            <p>Md. Hasanuzzaman, Md. Mahmudul Hasan, Rifat Abdullah Akhi ‘Autonomous Campus Lighting System Based on Solar Energy and LEDs’, National Conference on Digital Society, SMS-1 08, Bangladesh Electronics Society (BES), 26th June 2014.  </p>
+
+                                            <p>Md. Mahmudul Hasan, Md. Hasanuzzaman, Md. Rasel Mia, A. K. M. Fazlul Hoque ‘Design and Implementation of a Digital Security Lock Using Microcontroller’, National Conference on Digital Society, I-III 06, Bangladesh Electronics Society, 26th June 2014. </p>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                <i class="more-less fa fa-plus"></i>
+                                                MANAGEMENT & LEADERSHIP | participated and led various social and educational voluntary activities 
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                        <div class="panel-body">
+                                            <p>EEE ALUMNI ASSOCIATION, Daffodil International University, Dhaka <br> General Secretary, July 2015 to Nov 2018 <</p>
+                                            <p>Daffodil International University Nature Study Club, Dhaka <br> President, January 2015 to September 2015 </p>
+                                            <p>‘Prosfuton’-a regional educational and social welfare organization, Meherpur, Bangladesh <br>Vice President, July 2014 to July 2015 </p>
+                                            <p>Daffodil International University Debating Club, Dhaka <br> Member, January 2011 to December 2012 </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingNine">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                <i class="more-less fa fa-plus"></i>
+                                                OTHER INFO | gone through relevant professional books, senimars and workshops
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                        <div class="panel-body">
+
+                                            <p> <b>Relevant and Professional books I have read: </b> </p> 
+
+                                            <div class="card_container">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="ZeroToOne.jpg" alt="Card image cap">
+
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="IntellegentInvestor.jpg" alt="Card image cap">
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="LeadInsideTheBox.jpg" alt="Card image cap">
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="DontMakeMeThink.jpg" alt="Card image cap">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="card_container">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="TheLeanStartup.jpg" alt="Card image cap">
+
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="TheFiveDysfunctionOfATeam.jpg" alt="Card image cap">
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="PowerOfPositiveThinking.jpg" alt="Card image cap">
+
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <img class="card-img-top" src="SubtleArtOfNotGivingAFuck.png" alt="Card image cap">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTen">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                <i class="more-less fa fa-plus"></i>
+                                                PERSONAL DETAILS | born on 2nd March in 1990 at Meherpur and currrently living in Dhaka, Bangladesh
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                        <div class="panel-body">
+                                            <li>Name: Md. Hasanuzzaman</li>
+                                            <li>Name of Father: Md. Abdul Goni  </li>
+                                            <li>Name of Mother: Hasena Khatun </li>
+                                            <li>Permanent Address: Village-Tentulbaria </li>
+                                            <li>Post Office: Polashi Para, 7110 </li>
+                                            <li>Police Station: Gangni </li>
+                                            <li>District: Meherpur  </li>
+                                            <li>Division: Khulna </li>
+                                            <li>Country: Bangladesh </li>
+                                            <li>Marital Status: Single </li>
+                                            <li>Date of Birth: 2nd March 1990 </li>
+                                            <li>Sex: Male </li>
+                                            <li>Blood Group: A + </li>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="card_container">
+
+                            <div class="card-deck">
+
+                                <div class="card">
+                                    <div >
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="Ronangon_1.jpg" alt="First slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h5 class="card-title">Project: Ronangon (ongoing) </h5>
+                                        <div class="card-text">
+                                            <p> Ronangon is a puzzle solving game and contest platform based on the liberation war of Bangladesh. It helps students learn the basics of programming, math, science and analytical ability. </p>
+
+                                            <p>My contributions: </p>
+                                            <li> Designed high fidelity prototype</li>
+                                            <li> Provided a number of inputs for product design</li>
+                                            <li> Played a role for business model design </li>
+                                            <li> Generated concepts for level design</li>
+                                            <li> Documented project proposal </li>
+                                            <li> Edited product promo video </li>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div >
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="Shekho_1.JPG" alt="First slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>						
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title">Project: Shekho (ongoing) </h5>
+                                        <div class="card-text">
+                                            <p> Shekho is a smart virtual teacher for elementary math in Bangla. It helps students to learn and practice math concepts in their curriculum, automatically judge their performance and get personalized assistance. </p>
+
+                                            <p>My contributions: </p>
+                                            <li> Played core role for product design </li>
+                                            <li> Designed high fidelity Prototype </li>
+                                            <li> Conducted market and product research</li>
+                                            <li> Developed content for demo product </li>
+                                            <li> Generated buffer marketing concepts </li>
+                                            <li> Made product demonstration and promo video </li>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card_container">
+                            <div class="card-deck">
+
+
+                                <div class="card">
+                                    <div >
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="NoboPay1.png" alt="First slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h5 class="card-title">Project: NoboPay </h5>
+                                        <div class="card-text">
+                                            <p> NoboPay is an online Payment Gateway System in Bangladesh that allows both individuals and businesses to accept secured payments over internet for selling services or products. Using NoboPay web portal, registered merchant and client can accept secured online payments, manage e-wallet, make payout to bank account, manage customer subscriptions/products/services, view reports/settlements, and other features.  </p>
+
+                                            <p>My contributions: </p>
+                                            <li> Conducted product and market research  </li>
+                                            <li> Wrote and designed product use cases </li>
+                                            <li> Prepared solution design document </li>
+                                            <li> Prepared interactive web API documentation </li>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card">
+                                    <div >
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="eshikkha_2.jpg" alt="First slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h5 class="card-title">Project: Eshikkha</h5>
+                                        <div class="card-text">
+                                            <p> Eshikkha is the next generation platform for learning elementary programming in Bangla. It helps students to learn and practice programming, automatically judge their performance and get personalized assistance. </p>
+
+                                            <p>My contributions: </p>
+                                            <li> Conducted end-user testing </li>
+                                            <li> Conducted UX & UI enhancement research </li>
+                                            <li> Wrote user manual in Bangla and English </li>
+                                            <li> Documented project proposal </li>
+                                            <li> Designed pitch deck for extending next phase </li>
+                                            <li> Edited product demonstration and promo video </li>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" id="fill">
+                                    <img class="d-block w-100" src="sonargoan_1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Sonargoan Tour with CodeMarshal Team </h5>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="monpura_1.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Monpura Island Tour with CodeMarshal Team </h5>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="novem_resort_1.JPG" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Sreemangal Tour with CodeMarshal Team </h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+
+
+
+                                <div class="card">
+
+                                    <img id="myImg" src="me&zi.jpg" alt="I am with professor Muhammed Zafar Iqbal, PhD " style="width:100%">
+
+                                    <div >
+                                        <p class="card-text"> I am with Professor Dr. Muhammed Zafar Iqbal in the national conference of Bangladesh Physical Society, 2014. I was the youngest paper presenter in that conference [Year: 2014]. </p>
+                                    </div>
+
+                                    <!-- The Modal -->
+
+                                    <div id="myModal" class="modal">
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="img01">
+                                        <div id="caption"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <img id="myImg" src="me&mlr.jpg" alt="Rickshaw riding with professor Lutfar Rahman, PhD " style="width:100%">
+
+                                    <div >
+
+                                        <p class="card-text"> Rickshaw riding with Professor Dr. M. Lutfar Rahman. I was the special research associate to him while he was the emeritus professor at Daffodil International University [Year: 2016]. </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="me&kykobad.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> I am with Professor Dr. Mohammad Kaykobad in a seminar titled "Game Based Learning System" arranged by dept. of CSE at University of Dhaka in association with China [Year: 2015].  </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&mlr_family.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-text"> Professor Dr. M. Lutfar Rahman along with his family visited me in my residence. He loved to eat "Mashkalai-Pulses" [Year: 2018]. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="me&unesco.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-title"> <b>    </b></p>
+                                        <p class="card-text">Selfie with IAU Secretary General Eva Egron-Polak (right in the picture) in a workshop regarding internationalization of higher study organized by DIU at The Westin hotel, Dhaka, [Year: 2015] </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&yang.jpg" alt="Card image cap">
+                                    <div >									
+                                        <p class="card-text">At coffee shop with Sandy Yang at Mirpur, Dhaka, Bangladesh. He teaches Chinese language at BRAC University [Year: 2017]. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="me&akmfh.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-title"> <b>  </b></p>
+                                        <p class="card-text"> I am with Professor Dr. Engr A. K. M. Fazlul Hoque. He is the registrar of DIU and former director of Atomic Energy Centre Dhaka. He was my respected teacher and supervisor of two research projects also [Year: 2016]. </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&ah.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-title"> <b>  </b></p>
+                                        <p class="card-text">I am with Cartoonist Ahsan Habib in a program of DIU. He is the Chief Editor of 'Unmad Magazine', and  the youngest brother of Humayun Ahmed and Mohammed Zafar Iqbal [Year: 2015].</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card_container">
+                            <div class="card-deck">
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&ceo.jpg" alt="Card image cap">
+                                    <div >
+
+                                        <p class="card-text">Funny moment with Mr. Mahmudur Rahman, CEO of CodeMarshal. We tried to become model for the play card in the left side-"Don't disturb the wild animals and keep calm". The picture was taken at the Lawachara National Park, Sreemangal, Sylhet [Year: 2018]. </p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&emyl.jpg" alt="Card image cap">
+                                    <div >
+
+                                        <p class="card-text"> Selfie on the rooftop of Launch. In the picture, a junior intern colleague of CodeMarshal (in the left); Mr. Nahid Iftekhar Emyl, General Manager, Corporate Strategy at Robi Axiata Limited and Advisor of CodeMarshal (in the middle) and Mr. Towhid Jayed (in the right) [Year: 2018]</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="me&mymom.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-text"> At super shop with my mother, weekend groceries shoping at supershop, Dhaka [Year: 2018]. </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="me&mlr3.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> At the Ashulia green campus of DIU with honorable vice chancellor, Professor Dr. M. Lutfar Rahman [Year: 205]. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="diucolegue.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text">  I am with DIU colleagues in a program of newly appointed faculty members of CSE department [Year: 2015]. </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="mujibnagar.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> I am with a group of my friends showing respect to the martyrs of Bangladesh liberation war at Mujibnagar memorial, Meherpur, Bangladesh [Year: 2017]. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="kgc.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> At Kushtia Govt. College with my university friends [Year: 2017]. </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="bikeatchuadanga.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> Biking with village-friends at Chuyadanga district, Bangladesh [Year: 2018]. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="3idiots.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-text">  I am with my two best friends of university life  [Year:2018] </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="bullfight.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> Funny bull-fight with my junior colleague-Shakil Ahmed at Sonargoan, Bangladesh [Year: 2018]. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="childpark.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> Childish joyride with my friends at children park, Meherpur [Year: 2017].</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="junglehunting.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> Jungle hunting with my friends at Meherpur district [Year:2017]. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_container">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="kushtiamunicipal.jpg" alt="Card image cap">
+                                    <div >
+                                        <p class="card-text"> At Kushtia municipal gate with my friends [Year: 2017].</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="CyclingatDOHS.jpg" alt="Card image cap">
+                                    <div>
+                                        <p class="card-text"> I love Cycling at afternoon in my free time. The picture is taken from Mirpur DOHS [Year: 2018] </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+
+                    </div>
+                    <hr>
+
+                    <div class="card" id="footer">
+                        <div>
+                            <p> Copyright&copy;2018 by Md. Hasanuzzaman  </p>
+
+                            <p> 28/8, Block-A, Mirpur-12, Pallabi, Dhaka-1216, iamhasan.info@gmail.com, +880 1927783898 </p>                                          
+                            <div>
+                                <div class="text-center center-block">
+                                    <a href="https://www.facebook.com/cap.hasan"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                                    <a href="https://www.linkedin.com/in/hasaneee"><i id="social-gp" class="fa fa-linkedin-square fa-2x social"></i></a>
+                                    <a href="https://twitter.com/Hello2Hasan"><i id="social-tw" class="fa fa-twitter-square fa-2x social "></i></a>
+                                    <a href="https://www.youtube.com/channel/UC5C2K4-PGngdeUmBsWJ5abw?view_as=subscriber"><i id="social-em" class="fa fa-youtube-square fa-2x social"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } 
+                                else {
+                                    content.style.display = "block";
+                                }});
+                        }
+
+                        function move() {
+                            var elem = document.getElementById("myBar"); 
+                            var width = 1;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                                if (width >= 100) {
+                                    clearInterval(id);
+                                } else {
+                                    width++; 
+                                    elem.style.width = width + '%'; 
+                                }
+                            }
+                        }
+
+                        function toggleIcon(e) {
+                            $(e.target)
+                                .prev('.panel-heading')
+                                .find(".more-less")
+                                .toggleClass('fa-plus fa-minus');
+                        }
+                        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+                        $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+                        var img = document.getElementById('myImg');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+
+                        // Get the <span> element that closes the modal
+
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                            modal.style.display = "none";
+                        }
+
+                        function onClick(element) {
+                            document.getElementById("img01").src = element.src;
+                            document.getElementById("modal01").style.display = "block";
+                        }
+
+
+                        // Get the facebook chatbot SDK
+
+                        window.fbAsyncInit = function() {
+                            FB.init({
+                                appId            : 'your-app-id',
+                                autoLogAppEvents : true,
+                                xfbml            : true,
+                                version          : 'v3.2'
+                            });
+                        };
+
+                        (function(d, s, id){
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) {return;}
+                            js = d.createElement(s); js.id = id;
+                            js.src = "https://connect.facebook.net/en_US/sdk.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
